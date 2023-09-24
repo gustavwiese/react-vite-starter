@@ -31,7 +31,7 @@ h1 {
 }
 
 #root {
-    max-width: 1280px;
+    flex: 1;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
@@ -63,4 +63,17 @@ h1 {
     .logo {
         animation: logo-spin infinite 20s linear;
     }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+}
+
+.grid > article {
+    animation: fadeIn 0.5s;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    padding: 1.5em;
+    transition: 0.5s;
 }
